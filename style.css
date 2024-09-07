@@ -223,6 +223,7 @@ footer {
         /* 📍 Свойства для расположения элементов и отступа между ними */
         flex-direction: column-reverse;
         align-items: start;
+        gap: 60px;
     }
 
     .main-image {
@@ -233,7 +234,6 @@ footer {
     .text-wrapper {
         /* 📍 Максимальная ширина для блока с текстом */
         max-width: 560px;
-        margin: 60px 0 100px; 
     }
 
     .about-section {
@@ -244,8 +244,9 @@ footer {
 
 @media screen and (max-width: 768px) {
     .info-wrapper {
-        flex-direction: column;
-        margin: 60px 0 60px; 
+        /*flex-direction: column;*/
+        flex-flow: column wrap;
+        gap: 60px;
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
     }
 }
@@ -264,13 +265,13 @@ footer {
 
     .main-title {
         /* 📍 Размер шрифта */
-        font-size: 20px;
+        font-size: 36px;
         font-weight: 700;
     }
 
     .about-section .wrapper,
     .info-wrapper {
         /* 📍 Отступ между изображением и блоком с текстом */
-        margin: 50px 0 50px;
+        gap: 50px;
     }
 }
